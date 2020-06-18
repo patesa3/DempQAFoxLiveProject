@@ -57,6 +57,12 @@ public class Browser {
 	public static void maximize() {
 		Base.driver.manage().window().maximize();
 	}
+	
+	public static void openingApplicationURL() {
+		
+		Base.driver.get(Base.reader.getUrl());
+		
+	}
 
 	public static byte[] takeScreenshot() {
 		try {

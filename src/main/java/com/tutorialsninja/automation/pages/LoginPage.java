@@ -39,7 +39,10 @@ public class LoginPage {
 		Thread.sleep(1000);
 	}
 	
-	
-	
+	public static void doLogin(){
+	Elements.TypeText(emailField, Base.reader.getUsername());
+	Elements.TypeText(emailField, Base.reader.getPassword());
+	Elements.click(loginButton);
+	}
 
 }
