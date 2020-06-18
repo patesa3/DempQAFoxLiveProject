@@ -8,7 +8,8 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(features={"classpath:FeatureFiles/Register.feature",
 	"classpath:FeatureFiles/Login.feature", 
-	"classpath:FeatureFiles/Search.feature"},
+	"classpath:FeatureFiles/Search.feature",
+	"classpath:FeatureFiles/Orders.feature"},
 //@CucumberOptions(features={"classpath:FeatureFiles/Login.feature"},
 //@CucumberOptions(features={"classpath:FeatureFiles/Search.feature"},
 //@CucumberOptions(features={"classpath:FeatureFiles/Orders.feature"},
@@ -18,6 +19,6 @@ plugin={"html:target/cucumber_html_report"})
 //tags={"@Login"})
 //tags={"@Search"})
 //tags={"@Orders",  "@One"})
-public class Runner {
+public class TestRunner {
 
 }
